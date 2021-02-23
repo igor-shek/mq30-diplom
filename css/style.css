@@ -595,7 +595,7 @@
 		margin-bottom: 20px;
 		overflow: hidden;
 		position: relative;
-		border: 2px solid #cdcdcd; /* Только для просмотра границ блока! */
+		/*border: 2px solid #cdcdcd; /* Только для просмотра границ блока! */
 	}
 
 	.product--pic {
