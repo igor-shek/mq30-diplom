@@ -274,12 +274,6 @@
 	}
 }
 
-@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
-	.trend--card {
-		flex: 1 1 24%;
-	}
-}
-
 @media (max-width: 640px) {
 	.trends-container {
 		margin-top: 35px;
@@ -898,8 +892,6 @@
 
 @media (min-width: 1201px) {
 	.product-card-wrapper {
-		flex-wrap: wrap;
-		justify-content: space-between;
 		padding: 0 15px;
 	}
 
@@ -910,8 +902,6 @@
 
 @media (min-width: 641px) and (max-width: 1200px) {
 	.product-card-wrapper {
-		flex-wrap: wrap;
-		justify-content: space-between;
 		padding: 0 35px;
 	}
 
@@ -922,24 +912,27 @@
 
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
 	.product-card-wrapper {
-		flex-wrap: wrap;
-		justify-content: space-between;
+		padding: 0 35px;
 	}
 
 	.product-card {
-		width: calc(33.3% - 12px);
+		width: calc(50% - 12px);
 	}
 }
 
 @media (max-width: 640px) {
 	.product-card-wrapper {
-		flex-wrap: wrap;
-		justify-content: space-between;
 		padding: 0 15px;
 	}
 
 	.product-card {
 		width: 100%;
+	}
+}
+
+@media (max-width: 640px) and (orientation: lanscape) {
+	.product-card {
+		width: calc(50% - 12px);
 	}
 }
 /* Конец @media запросов */
@@ -954,6 +947,8 @@
 	}
 
 	.product-card-wrapper {
+		flex-wrap: wrap;
+		justify-content: space-between;
 		width: 100%;
 		max-width: 1200px;
 		display: flex;
@@ -966,10 +961,6 @@
 		border: 3px solid rgba(181,159,91,0.6);
 		padding: 25px 20px;
 		margin-top: 196px;
-	}
-
-	.product-card:last-child {
-		margin-right: 0;
 	}
 
 	.product--pic--wrapper {
