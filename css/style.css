@@ -930,7 +930,7 @@
 	}
 }
 
-@media (max-width: 640px) and (orientation: lanscape) {
+@media (max-width: 640px) and (orientation: landscape) {
 	.product-card {
 		width: calc(50% - 12px);
 	}
@@ -947,13 +947,14 @@
 	}
 
 	.product-card-wrapper {
+		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+
 		width: 100%;
 		max-width: 1200px;
-		display: flex;
 		margin-top: 12px;
-		/*color: #aaaaaa; /* Только для просмотра границ блока! */
+		color: #aaaaaa; /* Только для просмотра границ блока! */
 	}
 
 	.product-card {
