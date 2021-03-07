@@ -220,7 +220,7 @@ h1 {
 	/*background-color: #d0cfcf; /* Только для просмотра границ блока! */
 }
 
-
+/*----------------------------------------*/
 /* Блок Тренды */
 
 @media (min-width: 1201px) {
@@ -412,7 +412,7 @@ h2 a:hover {
 	text-decoration: none;
 }
 
-
+/*----------------------------------------*/
 /* Центральные разделы main и aside */
 
 @media (min-width: 1201px) {
@@ -451,7 +451,7 @@ h2 a:hover {
 	/*		background-color: #cdcdcd; /* Только для просмотра границ блока! */
 }
 
-
+/*----------------------------------------*/
 /* Блок main */
 
 @media (min-width: 1201px) {
@@ -589,7 +589,7 @@ main {
 }
 
 .text {
-	margin: 0 0 16px;
+	margin-bottom: 14px;
 	color: #0f0d0e;
 	font-family: OpenSans-Regular, Arial, sans-serif;
 	font-weight: 300;
@@ -597,7 +597,7 @@ main {
 	line-height: 22px;
 }
 
-
+/*----------------------------------------*/
 /*Блок aside */
 
 @media (min-width: 1201px) {
@@ -673,6 +673,7 @@ h3 {
 }
 
 /* Блоки Новые Посты */
+
 .news-container {
 	display: flex;
 	align-items: flex-start;
@@ -775,6 +776,7 @@ label.search {
 	height: 47px;
 	width: 100%;
 	padding: 0 20px 0 15px;
+	margin-bottom: 17px;
 	background-color: #f4f7f6;
 
 	color: #a2a4a3;
@@ -793,7 +795,6 @@ label.search {
 	box-sizing: border-box;
 	width: 100%;
 	height: 47px;
-	margin-top: 17px;
 	background-color: #b59f5b;
 	cursor: pointer;
 
@@ -811,6 +812,7 @@ label.search {
 }
 
 /* Блок боковых тегов */
+
 .aside-tags {
 	margin-top: 58px;
 	/*background-color: #d1cfcf; /* Только для просмотра границ блока! */
@@ -845,6 +847,7 @@ label.search {
 }
 
 /* Блок Темы */
+
 .subjects {
 	margin-top: 58px;
 }
@@ -874,7 +877,7 @@ a.subject-link:hover {
 	vertical-align: super;
 }
 
-
+/*----------------------------------------*/
 /* Блок Наши Изделия */
 
 @media (min-width: 1201px) {
@@ -885,6 +888,10 @@ a.subject-link:hover {
 	.product-card {
 		max-width: 338px;
 	}
+
+	.product-card:after {
+		top: 208px;
+	}
 }
 
 @media (min-width: 641px) and (max-width: 1200px) {
@@ -894,6 +901,10 @@ a.subject-link:hover {
 
 	.product-card {
 		width: calc(50% - 12px);
+	}
+
+	.product-card:after {
+		top: 62%;
 	}
 }
 
@@ -941,33 +952,37 @@ a.subject-link:hover {
 	width: 100%;
 	max-width: 1200px;
 	margin-top: 12px;
-	color: #aaaaaa; /* Только для просмотра границ блока! */
 }
 
 .product-card {
 	box-sizing: border-box;
-	border: 3px solid rgba(181,159,91,0.6);
-	padding: 25px 20px;
-	margin-top: 196px;
+	padding: 22px 20px;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	/*background-color: rgba(190,210,230,0.4); /* Только для просмотра границ блока! */
 }
 
 .product--pic--wrapper {
+	flex: 0 0%;
 	width: 100%;
-	height: 204px;
-	margin-top: -197px;
-	margin-bottom: 20px;
-	/*overflow: hidden;*/
-	position: relative;
-	z-index: -1; /* Вытаскиваем рамку над картинкой */
-	/*border: 2px solid #cdcdcd; /* Только для просмотра границ блока! */
+	margin-top: 0;
+	margin-bottom: 52px;
 }
 
-.product--pic {
-	flex: 1;
+.product---pic {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	object-position: center;
+}
+
+.product--text--wrapper {
+	flex: 1;
+	margin: -78px -20px -22px;
+	padding: 46px 20px 22px;
+	outline: 3px solid rgba(181,159,91,0.6);
 }
 
 .text--link {
@@ -986,6 +1001,7 @@ a.subject-link:hover {
 	justify-content: space-between;
 	align-items: flex-end;
 	width: 100%;
+	margin-top: 20px;
 }
 
 .price--before {
@@ -1009,7 +1025,7 @@ a.subject-link:hover {
 	/*line-height: 47px;*/
 }
 
-
+/*--------------------------------------------*/
 /* ПОДВАЛ */
 
 .footer-margins {
@@ -1099,7 +1115,10 @@ footer address {
 	text-align: center;
 	/*background-color: #dddddd; /* Только для просмотра границ блока! */
 }
-/* Pop-up */
+
+/*----------------------------------------*/
+/* POP-UP */
+
 .popup-container {
 	/**/
 	display: none;
@@ -1181,7 +1200,6 @@ footer address {
 	margin-top: 30px;
 }
 
-/* POP-UP */
 .popup-menu {
 	margin-top: 42px;
 }
@@ -1220,6 +1238,7 @@ footer address {
 }
 
 /* Радио-кнопки */
+
 .radio-subscribed:nth-of-type(even) {
 	margin-left: 5px;
 }
@@ -1257,6 +1276,7 @@ footer address {
 }
 
 /* Текстовое поле */
+
 .popup-text-area {
 	display: flex;
 	flex-direction: column;
